@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 4rem;
+      margin-top: 50px;
+      animation: pulse 1.5s infinite;
+    }
+
+    .image {
+      width: 100px;
+      position: absolute;
+      animation: float 5s infinite ease-in-out;
+    }
+
+    .image:nth-child(2) { left: 10%; top: 20%; animation-delay: 1s; }
+    .image:nth-child(3) { left: 30%; top: 60%; animation-delay: 2s; }
+    .image:nth-child(4) { left: 50%; top: 30%; animation-delay: 3s; }
+    .image:nth-child(5) { left: 70%; top: 50%; animation-delay: 4s; }
+    .image:nth-child(6) { left: 85%; top: 15%; animation-delay: 5s; }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-30px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Happy Birthday! 🎂</h1>
+
+  <!-- Moving images -->
+  <img src="https://cdn-icons-png.flaticon.com/512/3468/3468473.png" class="image" alt="Balloon">
+  <img src="https://cdn-icons-png.flaticon.com/512/679/679738.png" class="image" alt="Cake">
+  <img src="https://cdn-icons-png.flaticon.com/512/742/742751.png" class="image" alt="Gift">
+  <img src="https://cdn-icons-png.flaticon.com/512/2729/2729024.png" class="image" alt="Party Hat">
+  <img src="https://cdn-icons-png.flaticon.com/512/3909/3909380.png" class="image" alt="Star">
+
+</body>
+</html>
